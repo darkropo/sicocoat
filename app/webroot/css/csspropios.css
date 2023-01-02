@@ -1,0 +1,42 @@
+/* 
+    Document   : csspropios
+    Created on : 12/06/2013, 08:50:00 PM
+    Author     : rnoguera
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.grupochecks{
+    border: #000000 solid thin;   
+    
+}
+.datoscalibracion{
+    width: 400px;
+    height: auto;
+    float: right;
+    margin: 10px;
+    display: block;
+/*    border: solid 1px;*/
+}
+.datos{
+   width: 400px;
+    height: auto;
+    float: right;
+    display: block;
+    margin: 10px;
+/*    border: solid 1px; */
+}
+.grafica{
+  float: left;
+/*  border: solid 1px;*/
+}
+.resultados{
+    float: left;
+    margin-top: 10px;
+}
+.mas{
+    width: 100px;
+    height: auto;
+    
+}
