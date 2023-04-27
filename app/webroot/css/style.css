@@ -55,7 +55,7 @@ div, p, span, a, h1, h2, h3, h4, h5, h6, form {
 	width:939px;
 	height:54px;
 	float:left;
-	background:#d34040;
+	background:#338800;
 	}
 ul.nav {
 	margin:0px;
@@ -127,23 +127,23 @@ ul.nav li a:hover {
 	font-family: "Arial";
 	font-size:55px;
 	text-decoration:none;
-	color:#df2249;
+	color:#00BBDD;
 	font-weight:800;
         padding-top: 5px;
 	}
 .separador{
           height: 20px;
-          background-color: #df2249; 
+          background-color: #77BB00; 
           width: 939px;
           float: left;
           margin: 0px auto;
           color: white;
         }
 .separador p{
-        text-align: center;
+        text-align: right;
         margin-right: 10px;
 /*        width: 399px;*/
-        float: center;
+        float: right;
         }
 .separador div a{
 /*        float: left;*/
@@ -243,7 +243,7 @@ ul.left-item li a:hover {
 	margin: 0px;
 	padding:30px 0px 30px 0px;
 	width:939px;
-	background:#121212;
+	background:#0066AA;
 	float:left;
 	}
 p.copyright {

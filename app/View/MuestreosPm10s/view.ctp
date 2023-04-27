@@ -2,25 +2,18 @@
 <h2><?php
 $this->Html->addCrumb('Muestreos Pm10', '/muestreospm10s');
 $this->Html->addCrumb('Ver Pm10', '/muestreospm10s/view');
-echo __('Verificar Pedidos'); ?></h2>
+echo __('Muestreos Pm10'); ?></h2>
 	<dl>
-
-<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __('Id'); ?></dt>
 		<dd>
-			<?php echo h('035'); ?>
-			&nbsp;
-		</dd>	
-		<dt><?php echo __('Cebolla'); ?></dt>
-		<dd>
-			<?php echo h('150 kg'); ?>
+			<?php echo h($muestreosPm10['MuestreosPm10']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt>
-		<!--<?php echo __('Mes'); ?></dt>
+		<dt><?php echo __('Ciclos'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($muestreosPm10['Ciclo']['nombre'], array('controller' => 'ciclos', 'action' => 'view', $muestreosPm10['Ciclo']['id'])); ?>
 			&nbsp;
-		</dd> 
+		</dd>
 		<dt><?php echo __('Estaciones'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($muestreosPm10['Estacione']['nombre'], array('controller' => 'estaciones', 'action' => 'view', $muestreosPm10['Estacione']['id'])); ?>
@@ -30,33 +23,33 @@ echo __('Verificar Pedidos'); ?></h2>
 		<dd>
 			<?php echo $this->Html->link($muestreosPm10['Elemento']['nombre'], array('controller' => 'elementos', 'action' => 'view', $muestreosPm10['Elemento']['id'])); ?>
 			&nbsp;
-		</dd> -->
-		<dt><?php echo __('Papa'); ?></dt>
+		</dd>
+		<dt><?php echo __('Numero Muestreo'); ?></dt>
 		<dd>
-			<?php echo h('180 kg'); ?>
+			<?php echo h($muestreosPm10['MuestreosPm10']['numero_muestreo']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Remolacha'); ?></dt>
+		<dt><?php echo __('Fecha Montaje'); ?></dt>
 		<dd>
-			<?php echo h('190 kg'); ?>
+			<?php echo h($muestreosPm10['MuestreosPm10']['fecha_montaje']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Pimenton'); ?></dt>
+		<dt><?php echo __('Hora Montaje'); ?></dt>
 		<dd>
-			<?php echo h('30 kg'); ?>
+			<?php echo h($muestreosPm10['MuestreosPm10']['hora_montaje']); ?>
 			&nbsp;
 		</dd>
-		<!--<dt><?php echo __(''); ?></dt>
+		<dt><?php echo __('Fecha Recoleccion'); ?></dt>
 		<dd>
-			<?php echo h(''); ?>
-			&nbsp;
-		</dd>-->
-		<dt><?php echo __('Total'); ?></dt>
-		<dd>
-			<?php echo h('550 kg'); ?>
+			<?php echo h($muestreosPm10['MuestreosPm10']['fecha_recoleccion']); ?>
 			&nbsp;
 		</dd>
-		<!--<dt><?php echo __('Pulgadas Agua'); ?></dt>
+		<dt><?php echo __('Hora Recoleccion'); ?></dt>
+		<dd>
+			<?php echo h($muestreosPm10['MuestreosPm10']['hora_recoleccion']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Pulgadas Agua'); ?></dt>
 		<dd>
 			<?php echo h($muestreosPm10['MuestreosPm10']['pulgadas_agua']); ?>
 			&nbsp;
@@ -100,17 +93,16 @@ echo __('Verificar Pedidos'); ?></h2>
 		<dd>
 			<?php echo h($muestreosPm10['MuestreosPm10']['microgramo_metro_cubico_elemento']); ?>
 			&nbsp;
-		</dd>-->
+		</dd>
 	</dl>
 </div>
 <div class="actions">
 	<h3><?php echo __('Opciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Agregar Pedido'), array('action' => 'edit', $muestreosPm10['MuestreosPm10']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Verificar Pedidos'), array('action' => 'delete', $muestreosPm10['MuestreosPm10']['id']), null, __('Seguro desea Borrar # %s?', $muestreosPm10['MuestreosPm10']['id'])); ?> </li>
-		
-
-		<!--<li><?php echo $this->Html->link(__('Nuevo Pm10'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Pm10'), array('action' => 'edit', $muestreosPm10['MuestreosPm10']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $muestreosPm10['MuestreosPm10']['id']), null, __('Seguro desea Borrar # %s?', $muestreosPm10['MuestreosPm10']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Pm10'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Pm10'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('Listar Ciclos'), array('controller' => 'ciclos', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('Nuevo Ciclo'), array('controller' => 'ciclos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('Listar Estaciones'), array('controller' => 'estaciones', 'action' => 'index')); ?> </li>
@@ -118,6 +110,5 @@ echo __('Verificar Pedidos'); ?></h2>
 		<li><?php echo $this->Html->link(__('Listar Elementos'), array('controller' => 'elementos', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('Nuevo Elemento'), array('controller' => 'elementos', 'action' => 'add')); ?> </li>
                 <li><?php echo $this->Html->link(__('Carga Masiva'), array('controller' => 'app','action' => 'cargamasiva',3),array('class' => 'example4demo')); ?> </li>
-				-->
 	</ul>
 </div>

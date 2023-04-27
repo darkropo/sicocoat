@@ -62,7 +62,7 @@ $cakeDescription = __d('localhost','Sicocoat');
                 //datepicker default
                 
                 //mask default
-                echo $this->Html->scriptBlock(" $.mask.masks.int = {mask: '99999'} ");
+                echo $this->Html->scriptBlock(" $.mask.masks.int = {mask: '99'} ");
                 echo $this->Html->scriptBlock(" $.mask.masks.dec = {mask: '99.999,999,999,999', type: 'reverse', defaultValue: '0000'}");
                 echo $this->Html->scriptBlock(" $.mask.masks.decesp = {mask: '999.999,999,999,999', type: 'reverse', defaultValue: '0000'}");
                 //mask default

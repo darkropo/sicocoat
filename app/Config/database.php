@@ -64,7 +64,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => '',
+		'password' => 'sicocoat',
 		'database' => 'sicocoat',
 		'prefix' => '',
 		//'encoding' => 'utf8',

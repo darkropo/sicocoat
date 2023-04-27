@@ -34,11 +34,6 @@ a {
 /*	text-decoration: underline;*/
 /*	font-weight: bold;*/
 }
-.mas{
-    width: 35px;
-    height: auto;
-    
-}
 a:hover {
 	color: #367889;
 	text-decoration:none;
@@ -273,7 +268,7 @@ fieldset {
 	/*padding: 16px 10px;*/
 }
 fieldset legend {
-	color: #2dc33c;
+	color: #e32;
 	font-size: 160%;
 	font-weight: bold;
 }
@@ -318,7 +313,7 @@ label {
 }
 input, textarea {
 	clear: both;
-	font-size: 100%;
+	font-size: 140%;
 	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
 	/*padding: 1%;
 	width:98%;*/
@@ -462,7 +457,7 @@ p.error,
 	clear: both;
 	color: #fff;
 	border: 1px solid rgba(0, 0, 0, 0.5);
-	background: #a64646;
+	background: #3B8230;
 	background-repeat: repeat-x;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
 	background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
